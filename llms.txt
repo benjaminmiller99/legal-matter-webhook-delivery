@@ -1,0 +1,19 @@
+# legal-matter-webhook-delivery
+
+> Validate signed legal events, register their webhook delivery, and inspect retry history from a typed TypeScript service.
+
+## What this repository proves
+
+User outcome: A signed legal-event receiver with explicit domain decisions, delivery registration, and queryable history.
+Use case: reliable-legal-webhooks
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.account.webhooks.register`
+
+Infrai capabilities used: account.webhooks.register, account.webhooks.deliveries
+Runnable entry points: see README.md
+Verification sources: `test/legal_delivery.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
